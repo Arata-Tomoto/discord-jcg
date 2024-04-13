@@ -36,7 +36,7 @@ async def execute_function():  # 大会を一定時間ごとに調べる関数
 
 
 async def jcg(month, day):  # 情報を取得し，チャンネルに送信する関数
-    ctx = bot.get_channel(1220755099018727558)
+    ctx = bot.get_channel(os.environ.get("CHANNEL"))
     try:
         deck_urls = first.main(month, day)  # デッキのダウンロード，統計の処理
         if (deck_urls == "no_game"):  # グループ予選が見つからなかったら終了
