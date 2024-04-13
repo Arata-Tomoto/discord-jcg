@@ -13,9 +13,6 @@ import pandas as pd
 import math
 import matplotlib.pyplot as plt
 
-month = 0
-day = 0
-
 
 def gen_url(day):
     # ローテーションのグループ，決勝大会を選択
